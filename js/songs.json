@@ -1,10 +1,9 @@
 
-{
-    "songs": [
-        {"title": "altar", "artist" : "kehlani", "youtube link": "<idk>"},
-        {"title": "little story", "artist": "kehlani", "youtube link": "<idk>"},
-        {"title": "distraction", "artists": "kehlani", "youtube link": "<idk>"},
-        {"title": "snooze", "artist": "sza", "youtube": "<idk>"}
-]
+"songs" :  {
+        {"title": "altar", "artist" : "kehlani", "ft.artist": "none", "youtube link": "<idk>"},
+        {"title": "little story", "artist": "kehlani", "ft.artist": "none", "youtube link": "<idk>"},
+        {"title": "distraction", "artists": "kehlani", "ft.artist": "none", "youtube link": "<idk>"},
+        {"title": "snooze", "artist": "sza", "ft.artist": "none", "youtube": "<idk>"}
+
 
 }
