@@ -1,0 +1,27 @@
+[
+        {
+            "title": "100%",
+            "artist" : "Sonic Youth",
+            "ft.artist": ["none"],
+            "youtube link": "<idk>"
+        },
+        {"title": "12XU", "artist": "Minor Threat", "ft.artist": ["none"], "youtube link": "<idk>"},
+        {"title": "Brand New City", "artists": "Mitski", "ft.artist": ["none"], "youtube link": "<idk>"},
+        {"title": "Seeing Red", "artist": "Minor Threat", "ft.artist": ["none"], "youtube link": "<idk>"},
+        {"title": "People Ain't No Good", "artist": "The Cramps", "ft.artist": ["none"], "youtube link": "<idk>"},
+        {"title": "Nazi Punks Fuck Off", "artist": "Dead Kennedys", "ft.artist": ["none"], "youtube link": "<idk>"},
+        {"title": "Survival Tactics", "artist": "Joey Bada$$", "ft.artist": ["Capital Steez"], "youtube link": "<idk>"},
+        {"title": "Burn Hollywood Burn", "artist": "Public Enemy", "ft.artist": ["Ice Cube", "Big Daddy Kane"], "youtube link": "<idk>"},
+        {"title": "The Nigga Ya Love To Hate", "artist": "Ice Cube", "ft.artist": ["none"], "youtube link": "<idk>"},
+        {"title": "Time 4 Sumaksion", "artist": "Redman", "ft.artist": ["none"], "youtube link": "<idk>"},
+        {"title": "Insane in the Brain", "artist": "Cypress Hill", "ft.artist": ["none"], "youtube link": "<idk>"},
+        {"title": "Neighbors", "artist": "J. Cole", "ft.artist": ["none"], "youtube link": "<idk>"},
+        {"title": "The Bitch In Yoo", "artist": "Common", "ft.artist": ["none"], "youtube link": "<idk>"},
+        {"title": "Ether", "artist": "Nas", "ft.artist": ["none"], "youtube link": "<idk>"},
+        {"title": "Me Against The World", "artist": "2Pac", "ft.artist": ["Dramacydal"], "youtube link": "<idk>"},
+        {"title": "Mad Dog", "artist": "NCT 127", "ft.artist": ["none"], "youtube link": "<idk>"},
+        {"title": "Crazy", "artist": "Doechii", "ft.artist": ["none"], "youtube link": "<idk>"},
+        {"title": "Limp", "artist": "Fiona Apple", "ft.artist": ["none"], "youtube link": "<idk>"},
+        {"title": "SIMP", "artist": "Rico Nasty", "ft.artist": ["Full Tac", "Lil Mariko"], "youtube link": "<idk>"}
+    ]
+    

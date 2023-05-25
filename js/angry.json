@@ -1,5 +1,10 @@
  [
-    {"title": "100%", "artist" : "Sonic Youth", "ft.artist": ["none"], "youtube link": "<idk>"},
+    {
+        "title": "100%",
+        "artist" : "Sonic Youth",
+        "ft.artist": ["none"],
+        "youtube link": "<idk>"
+    },
     {"title": "12XU", "artist": "Minor Threat", "ft.artist": ["none"], "youtube link": "<idk>"},
     {"title": "Brand New City", "artists": "Mitski", "ft.artist": ["none"], "youtube link": "<idk>"},
     {"title": "Seeing Red", "artist": "Minor Threat", "ft.artist": ["none"], "youtube link": "<idk>"},
