@@ -49,12 +49,14 @@ body {
     justify-content: space-between;
   }
   /* ------------------------------------------------------------------------------------------------ */
+  #song-output {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+  }
 
   #website-info {
     /* insert specified styling for website info if desired */
-  }
-  #gifset {
-    /* insert specified styling for the gifset if desired */
   }
   #album-covers {
     /* insert specified styling for the album covers if desired */

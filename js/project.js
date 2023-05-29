@@ -4,7 +4,7 @@
 
 // this will be the javascript file that does 'stuff' on our webpage
 
-// randomize function
+// randomize function ----------------------------------------------------------------------------------------------------------------
 // returns a random song from the arr playlist
 function displayRandom(arr){
     // generate a random index
@@ -13,31 +13,63 @@ function displayRandom(arr){
     var randomSong = arr[randomIndex];
 
     // for debugging
+    /*
     console.log("Song Title: ", randomSong.title);
     console.log("artist: ", randomSong.artist);
     console.log("link: ", randomSong.youtube);
-    
+    */
+
     // return the random song object
     return randomSong;
 }
+// -----------------------------------------------------------------------------------------------------------------------------------
 
 // Lofi Songs button stuff
 // find button 
 var lofi_button = document.getElementById("lofi");
-// finding the gifset section                                                       if u want to hide the section, you might need to edit this
-var selector = document.getElementById("gifset");
-// adding a header to title the results                                             here too
-//var addition = document.createElement("h3");
-//addition.innerHTML = "Your Selected Song";                                          // !
+var angry_button = document.getElementById("angry");
+var bad_bitch_button = document.getElementById("bad-bitch");
+var hurt_button = document.getElementById("hurt");
+var feel_good_button = document.getElementById("feel-good");
+var lovesick_button = document.getElementById("lovesick");
 
-// attach event listener to button & call displayRandom fxn
+// attach event listener to button & call displayRandom fxn using temporary arrays
 lofi_button.addEventListener("click", function(){
     // pick a song
     var lofi_song = displayRandom(lofi_songs);
     // attach song stuff to output
-    document.getElementById("song-output").innerHTML = "Title: " + lofi_song.title + "<br>Artist: " + lofi_song.artist + "<br>Youtube Link: " + lofi_song.youtube + "<br>";
+    document.getElementById("song-output").innerHTML = "Title: " + lofi_song.title + "<br>Artist: " + lofi_song.artist + "<br>Youtube Link:<br>" + lofi_song.youtube + "<br>";
     //selector.appendChild("addition");
 })
+
+// attach event listener to button & call displayRandom fxn using jsonFetch
+angry_button.addEventListener("click", function(){
+    // call json Fetch
+    var angry_songs = jsonFetch("angry.json");
+    // pick a song
+    var angry_song = displayRandom(angry_songs);
+    // attach song stuff to output
+    document.getElementById("song-output").innerHTML = "Title: " + lofi_song.title + "<br>Artist: " + lofi_song.artist + "<br>Youtube Link:<br>" + lofi_song.youtube + "<br>";
+    //selector.appendChild("addition");
+})
+
+// this is to use the fetch api to gather separate json files to link songs.
+// using async function so other functions of the website will be usable
+async function jsonFetch(filename){
+    // declare the request URL from github site
+    const requestURL = "https://github.io/shldecke/Art101Group10Project/js/" + filename;
+    // initialize a new request object
+    const request = new Request(requestURL);
+
+    // make a network request using fetch() and returns a response obj
+    const response = await fetch(request);
+    // retreive the response as a JSON using .json
+    const songs = await response.json();
+    // return the songs array to do work on
+    return songs;
+}
+
+
 
 
 // angry songs button stuff
@@ -68,23 +100,3 @@ var lofi_songs = [
     {"title": "Know Who You Are At Every Age", "artist": "Cocteau Twins", "ft.artist": ["none"], "youtube": "smthg"},
     {"title": "Limerence", "artist": "Yves Tumor", "ft.artist": ["none"], "youtube": "smthg"}
 ]
-
-
-/*  this is to use the separate json files to link songs.
-// using async function so other functions of the website will be usable
-async function random_lofi(){
-    // declare the request URL from github site
-    const requestURL = "https://github.io/shldecke/Art101Group10Project/js/lofi.json";
-    // initialize a new request object
-    const request = new Request(requestURL);
-
-    // make a network request using fetch() and returns a response obj
-    const response = await fetch(request);
-    // retreive the response as a JSON using .json
-    const lofi_songs = await response.json();
-
-    // randomize & then store in a variable
-
-    // once we've selected the song, it's time to append to the webpage
-
-}*/
