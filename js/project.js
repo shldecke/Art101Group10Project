@@ -46,6 +46,8 @@ lofi_button.addEventListener("click", function(){
 angry_button.addEventListener("click", function(){
     // call json Fetch
     var angry_songs = jsonFetch("angry.json");
+    // debugging 
+    console.log(angry_songs);
     // pick a song
     var angry_song = displayRandom(angry_songs);
     // attach song stuff to output
