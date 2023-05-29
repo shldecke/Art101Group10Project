@@ -9,7 +9,7 @@
 	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 	<!-- Link to javascript file in this project folder -->
-	<script src="js/lab.js" defer></script>
+	<script src="js/project.js" defer></script>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
 	<meta charset="UTF-8" />
@@ -36,17 +36,20 @@
 						</p>
 			</div>
 		</section>
-		<section>  <!-- i don't know if i should tag this, we can see -->
+		<section> 
+			<!-- here is the section for our gifs/song selector buttons -->
 			<div class = "minor-section" id="gifset">
-				<!-- i set this up as an unordered list but we can edit it and play with it. -->
 				<div class="column">
-					<button id="angry">Angry Generator</button>
-					<button id="lofi">Lofi Generator</button>
+					<!-- still missing the gifs to insert -->
 					<!-- <span id="linkDisplay"></span> -->
 					<!-- example of file embed -->
 					<!-- <li><a href="lab2/index.html">Lab 2 index.html File</a></li> -->
 					<!-- example of an image embed from image folders -->
-					<!--<li><img class="baby-photo" src="./img/renee.JPEG"></li> -->	
+					<!--<li><img class="baby-photo" src="./img/renee.JPEG"></li> -->
+					<button id="angry">Angry Generator</button>
+					<iframe src="https://giphy.com/embed/LzinRMeoxdpAt6w2n7" width="300" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+					<!-- <p><a href="https://giphy.com/gifs/Loficoffee-lofi-loficoffee-LzinRMeoxdpAt6w2n7"></a></p> -->
+					<button id="lofi">Lofi Generator</button>
 				</div>
 				<div class="column">
 					<button id="bad-bitch">Bad Bitch Generator</button>
@@ -56,6 +59,7 @@
 					<button id="lovesick">Lovesick Generator</button>
 					<button id="feel-good">Feel Good Generator</button>
 				</div>
+				<p id="song-output"></p>
 			</div>
 		</section>
 		<section>
