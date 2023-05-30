@@ -185,7 +185,7 @@ var lovesick_songs = [
     "youtube link": "<https://www.youtube.com/watch?v=NqjPqsry7no>"},
     {"title": "reckless driving", "artist": "Lizzy McAlpine", "ft.artist": ["Ben Kessler"], 
     "youtube link": "<https://www.youtube.com/watch?v=8gUiOjbs7tk>"},
-    {"title": "orange show speedway", "artist": "Lizzy McAlpine", "ft.artist": ["Dramacydal"], 
+    {"title": "orange show speedway", "artist": "Lizzy McAlpine", "ft.artist": ["none"], 
     "youtube link": "<https://www.youtube.com/watch?v=hfLtGOIbtsk>"},
     {"title": "And I", "artist": "Ciara", "ft.artist": ["none"], 
     "youtube link": "<https://www.youtube.com/watch?v=pG-lVf8f0Ks>"},
