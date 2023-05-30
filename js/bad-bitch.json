@@ -1,10 +1,5 @@
 [
-        {
-            "title": "100%",
-            "artist" : "Sonic Youth",
-            "ft.artist": ["none"],
-            "youtube link": "<idk>"
-        },
+       
         {"title": "Don't Like.1", "artist": "Kanye West", "ft.artist": ["Chief Keef, Pusha T, Big Sean, Jadakiss"], "youtube link": "<idk>"},
         {"title": "Be a Lady", "artists": "Ice Spice", "ft.artist": ["none"], "youtube link": "<idk>"},
         {"title": "Big Ole Freak", "artist": "Megan Thee Stallion", "ft.artist": ["none"], "youtube link": "<idk>"},

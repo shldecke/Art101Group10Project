@@ -1,10 +1,5 @@
 [
-    {
-        "title": "100%",
-        "artist" : "Sonic Youth",
-        "ft.artist": ["none"],
-        "youtube link": "<idk>"
-    },
+    
     {"title": "That's What I Like", "artist": "Bruno Mars", "ft.artist": ["none"], "youtube link": "<https://youtu.be/PMivT7MJ41M>"},
     {"title": "Don't Stop The Music", "artists": "Rihanna", "ft.artist": ["none"], "youtube link": "<https://youtu.be/yd8jh9QYfEs>"},
     {"title": "Stereo Love", "artist": "Edward Maya", "ft.artist": ["Vika Jigulina"], "youtube link": "<https://youtu.be/p-Z3YrHJ1sU>"},
