@@ -8,8 +8,8 @@
 
 	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-	<!-- Link to javascript file in this lab folder -->
-	<script src="js/lab.js" defer></script>
+	<!-- Link to javascript file in this project folder -->
+	<script src="js/project.js" defer></script>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
 	<meta charset="UTF-8" />
@@ -18,7 +18,7 @@
 
 
 	<!-- Project-specifc CSS file for any special styling of this particular page -->
-	<link rel="stylesheet" type="text/css" href="css/homepage.css">
+	<link rel="stylesheet" type="text/css" href="css/project.css">
 </head>
 
 <!-- WEBSITE BODY -->
@@ -36,17 +36,34 @@
 						</p>
 			</div>
 		</section>
-		<section>  <!-- i don't know if i should tag this, we can see -->
-			<div class = "minor-section" id="gifset">
-				<!-- i set this up as an unordered list but we can edit it and play with it. -->
-				<ul>
-					<button id="tester-button">Sample me</button>
-					<span id="linkDisplay"></span>
-					<!-- example of file embed -->
-					<!-- <li><a href="lab2/index.html">Lab 2 index.html File</a></li> -->
-					<!-- example of an image embed from image folders -->
-					<!--<li><img class="baby-photo" src="./img/renee.JPEG"></li> -->	
-				</ul>
+		<section> 
+			<!-- here is the section for our gifs/song selector buttons -->
+			<div class = "minor-section" id="gifs">
+				<div id="gifset">
+					<div class="column">
+						<!-- still missing the gifs to insert -->
+						<!-- <span id="linkDisplay"></span> -->
+						<!-- example of file embed -->
+						<!-- <a href="lab2/index.html">Lab 2 index.html File</a> -->
+						<!-- example of an image embed from image folders -->
+						<!--<img class="baby-photo" src="./img/renee.JPEG"> -->
+						<button class="button" id="angry">Angry Generator</button>
+						<iframe src="https://giphy.com/embed/LzinRMeoxdpAt6w2n7" width="300" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+						<!-- <p><a href="https://giphy.com/gifs/Loficoffee-lofi-loficoffee-LzinRMeoxdpAt6w2n7"></a></p> -->
+						<button class="button" id="lofi">Lofi Generator</button>
+					</div>
+					<div class="column">
+						<button class="button" id="bad-bitch">Bad Bitch Generator</button>
+						<button class="button" id="hurt">Depressed Generator</button>
+					</div>
+					<div class="column">
+						<button class="button" id="lovesick">Lovesick Generator</button>
+						<iframe src="https://giphy.com/embed/l3vRlT2k2L35Cnn5C" width="350" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+						<!-- <p><a href="https://media.giphy.com/media/l3vRlT2k2L35Cnn5C/giphy.gif"></a></p> -->
+						<button class="button" id="feel-good">Feel Good Generator</button>
+					</div>
+				</div>
+				<p id="song-output"></p>
 			</div>
 		</section>
 		<section>
