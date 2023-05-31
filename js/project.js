@@ -81,6 +81,15 @@ function display(arr){
     var song = displayRandom(arr);
     document.getElementById("song-output").innerHTML = "Title: " + song.title + "<br>Artist: " + song.artist + "<br>Youtube Link:<br>" + song.youtube + "<br>"; 
 }
+function getEmpoweringSongs(){
+    $.ajax({
+        url: "https://shldecke.github.io/Art101Group10Project/js/bad-bitch.json",
+        type: "GET"
+    })
+    .done(function(data){
+        display(data);
+    })
+}
 var bad_bitch_songs = [];
 var lovesick_songs = [];
 var feel_good_songs = [];
