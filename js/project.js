@@ -54,7 +54,7 @@ angry_button.addEventListener("click", function(){
     document.getElementById("song-output").innerHTML = "Title: " + angry_song.title + "<br>Artist: " + angry_song.artist + "<br>Youtube Link:<br>" + angry_song.youtube + "<br>";
     //selector.appendChild("addition");
 })
-bad_bitch_button.addEventListener("click", getEmpoweringSongs());
+$("#bad-bitch").click(getEmpoweringSongs);
 // hurt_button.addEventListener("click", display(hurt_songs));
 // feel_good_button.addEventListener("click", display(feel_good_songs));
 // lovesick_button.addEventListener("click", display(lovesick_songs));
@@ -78,13 +78,17 @@ async function jsonFetch(){
 ----------------------------------------------------------------------------------------------------------------------------------- */
 // songs for the prototype 
 function display(arr){
+    console.log("displayed fxn");
     var song = displayRandom(arr);
-    document.getElementById("song-output").innerHTML = "Title: " + song.title + "<br>Artist: " + song.artist + "<br>Youtube Link:<br>" + song.youtube + "<br>"; 
+    $("#song-output").html("Title: " + song.title + "<br>Artist: " + song.artist + "<br>Youtube Link:<br>" + song.youtube + "<br>");
+    //document.getElementById("song-output").innerHTML = "Title: " + song.title + "<br>Artist: " + song.artist + "<br>Youtube Link:<br>" + song.youtube + "<br>"; 
 }
 function getEmpoweringSongs(){
+    console.log("clicked!");
     $.ajax({
         url: "https://shldecke.github.io/Art101Group10Project/js/bad-bitch.json",
-        type: "GET"
+        type: "GET",
+        data: [],
     })
     .done(function(data){
         display(data);
