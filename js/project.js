@@ -54,7 +54,7 @@ angry_button.addEventListener("click", function(){
     document.getElementById("song-output").innerHTML = "Title: " + angry_song.title + "<br>Artist: " + angry_song.artist + "<br>Youtube Link:<br>" + angry_song.youtube + "<br>";
     //selector.appendChild("addition");
 })
-// bad_bitch_button.addEventListener("click", display(bad_bitch_songs));
+bad_bitch_button.addEventListener("click", getEmpoweringSongs());
 // hurt_button.addEventListener("click", display(hurt_songs));
 // feel_good_button.addEventListener("click", display(feel_good_songs));
 // lovesick_button.addEventListener("click", display(lovesick_songs));
