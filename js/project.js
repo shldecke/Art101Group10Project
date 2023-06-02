@@ -91,7 +91,7 @@ function getEmpoweringSongs(){
         data: [],
     })
     .done(function(data){
-        display(data);
+        display(data);          // might need to indicate which element with square brackets in one of these fxns...
     })
 }
 var bad_bitch_songs = [];
