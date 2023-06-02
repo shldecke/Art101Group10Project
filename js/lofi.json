@@ -2,20 +2,20 @@
     {
         "title": "Tomorrow",
         "artist" : "Kevin Penkin",
-        "ft.artist": ["none"],
-        "youtube link": "<idk>"
+        "ft.artist": "none",
+        "youtube": "<idk>"
     },
-    {"title": "Yuri on ICE", "artist": "Taro Umebayashi", "ft.artist": ["none"], "youtube link": "<idk>"},
-    {"title": "Lilac", "artists": "Kainbeats", "ft.artist": ["none"], "youtube link": "<idk>"},
-    {"title": "Nocturnal", "artist": "noni", "ft.artist": ["none"], "youtube link": "<idk>"},
-    {"title": "Fields", "artist": "Leavv", "ft.artist": ["none"], "youtube link": "<idk>"},
-    {"title": "Afterglow", "artist": "Goson", "ft.artist": ["Dreamfield"], "youtube link": "<idk>"},
-    {"title": "Bbydhyonchord", "artist": "Aphex Twin", "ft.artist": ["none"], "youtube link": "<idk>"},
-    {"title": "Gymnopedie No.1", "artist": "Erik Satie", "ft.artist": ["Philippe Entremont"], "youtube link": "<idk>"},
-    {"title": "Colors of My Life", "artist": "Mantovani", "ft.artist": ["none"], "youtube link": "<idk>"},
-    {"title": "Sorry", "artist": "Dusty Clav", "ft.artist": ["none"], "youtube link": "<idk>"},
-    {"title": "Inochi no Namae/The Name of Life", "artist": "Jeremy Ng", "ft.artist": ["none"], "youtube link": "<idk>"},
-    {"title": "Roygbiv", "artist": "Boards of Canada", "ft.artist": ["none"], "youtube link": "<idk>"},
-    {"title": "Know Who You Are At Every Age", "artist": "Cocteau Twins", "ft.artist": ["none"], "youtube link": "<idk>"},
-    {"title": "Limerence", "artist": "Yves Tumor", "ft.artist": ["none"], "youtube link": "<idk>"}
+    {"title": "Yuri on ICE", "artist": "Taro Umebayashi", "ft.artist": "none", "youtube": "<idk>"},
+    {"title": "Lilac", "artists": "Kainbeats", "ft.artist": "none", "youtube": "<idk>"},
+    {"title": "Nocturnal", "artist": "noni", "ft.artist": "none", "youtube": "<idk>"},
+    {"title": "Fields", "artist": "Leavv", "ft.artist": "none", "youtube": "<idk>"},
+    {"title": "Afterglow", "artist": "Goson", "ft.artist": "Dreamfield", "youtube": "<idk>"},
+    {"title": "Bbydhyonchord", "artist": "Aphex Twin", "ft.artist": "none", "youtube": "<idk>"},
+    {"title": "Gymnopedie No.1", "artist": "Erik Satie", "ft.artist": "Philippe Entremont", "youtube": "<idk>"},
+    {"title": "Colors of My Life", "artist": "Mantovani", "ft.artist": "none", "youtube": "<idk>"},
+    {"title": "Sorry", "artist": "Dusty Clav", "ft.artist": "none", "youtube": "<idk>"},
+    {"title": "Inochi no Namae/The Name of Life", "artist": "Jeremy Ng", "ft.artist": "none", "youtube": "<idk>"},
+    {"title": "Roygbiv", "artist": "Boards of Canada", "ft.artist": "none", "youtube": "<idk>"},
+    {"title": "Know Who You Are At Every Age", "artist": "Cocteau Twins", "ft.artist": "none", "youtube": "<idk>"},
+    {"title": "Limerence", "artist": "Yves Tumor", "ft.artist": "none", "youtube": "<idk>"}
 ]
