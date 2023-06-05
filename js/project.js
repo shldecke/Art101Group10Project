@@ -2,8 +2,6 @@
 // Author: Shelby Decker ADD NAMES HERE
 // Prototype Due: 5/30/23 7:00a
 
-// this will be the javascript file that does 'stuff' on our webpage
-
 // randomize function ----------------------------------------------------------------------------------------------------------------
 // returns a random song from the arr playlist
 function displayRandom(arr){
@@ -28,7 +26,8 @@ function displayRandom(arr){
 // find button 
 var lofi_button = document.getElementById("lofi");
 var angry_button = document.getElementById("angry");
-var bad_bitch_button = document.getElementById("bad-bitch");
+var bad_bitch_button = $("#bad-bitch");
+//var bad_bitch_button = document.getElementById("bad-bitch");
 var hurt_button = document.getElementById("hurt");
 var feel_good_button = document.getElementById("feel-good");
 var lovesick_button = document.getElementById("lovesick");
