@@ -2,7 +2,9 @@
 // Author: Shelby Decker ADD NAMES HERE
 // Prototype Due: 5/30/23 7:00a
 
-// randomize function ----------------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Pulling the songs from JSON
+
 // returns a random song from the arr playlist
 function displayRandom(arr){
     // generate a random index
@@ -20,13 +22,71 @@ function displayRandom(arr){
     // return the random song object
     return randomSong;
 }
-// -----------------------------------------------------------------------------------------------------------------------------------
+// displays the song with the correct formatting
+function display(arr){
+    console.log("displayed fxn");
+    var song = displayRandom(arr);
+    $("#song-output").html("Title: " + song.title + "<br>Artist: " + song.artist + "<br>Youtube Link:<br>" + song.youtube + "<br>");
+    //document.getElementById("song-output").innerHTML = "Title: " + song.title + "<br>Artist: " + song.artist + "<br>Youtube Link:<br>" + song.youtube + "<br>"; 
+}
 
+// pulls the song from the json file with the URL as strURL
+function getSongs(strURL){
+    console.log("clicked!");
+    $.ajax({
+        url: strURL,
+        //"https://shldecke.github.io/Art101Group10Project/js/bad-bitch.json",
+        type: "GET",
+        dataType: "json",
+        data: [],
+    })
+    .done(function(data){
+        display(data);          // might need to indicate which element with square brackets in one of these fxns...
+    })
+}
+
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// using jquery to print the songs
+
+var bad_bitch_button = $("#bad-bitch");
+bad_bitch_button.click(function(){
+    getSongs("https://shldecke.github.io/Art101Group10Project/js/bad-bitch.json");
+})
+var lofi_button = $("#lofi");
+lofi_button.click(function(){
+    getSongs("https://shldecke.github.io/Art101Group10Project/js/lofi.json");
+})
+
+var lovesick_button = $("#lovesick");
+lovesick_button.click(function(){
+    getSongs("https://shldecke.github.io/Art101Group10Project/js/love-sick.json");
+})
+
+var hurt_button = $("#hurt");
+hurt_button.click(function(){
+    getSongs("https://shldecke.github.io/Art101Group10Project/js/hurt.json");
+})
+
+var feel_good_button = $("#feel-good");
+feel_good_button.click(function(){
+    getSongs("https://shldecke.github.io/Art101Group10Project/js/feel-good.json");
+})
+
+var angry_button = $("#angry");
+angry_button.click(function(){
+    getSongs("https://shldecke.github.io/Art101Group10Project/js/angry.json");
+})
+
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+/* EXTRA 
 // Lofi Songs button stuff
 // find button 
 var lofi_button = document.getElementById("lofi");
 var angry_button = document.getElementById("angry");
-var bad_bitch_button = $("#bad-bitch");
+
 //var bad_bitch_button = document.getElementById("bad-bitch");
 var hurt_button = document.getElementById("hurt");
 var feel_good_button = document.getElementById("feel-good");
@@ -53,46 +113,12 @@ angry_button.addEventListener("click", function(){
     document.getElementById("song-output").innerHTML = "Title: " + angry_song.title + "<br>Artist: " + angry_song.artist + "<br>Youtube Link:<br>" + angry_song.youtube + "<br>";
     //selector.appendChild("addition");
 })
-$("#bad-bitch").click(getEmpoweringSongs);
+
 // hurt_button.addEventListener("click", display(hurt_songs));
 // feel_good_button.addEventListener("click", display(feel_good_songs));
 // lovesick_button.addEventListener("click", display(lovesick_songs));
 
-/* -----------------------------------------------------------------------------------------------------------------------------------
-// this is to use the fetch api to gather separate json files to link songs.
-// using async function so other functions of the website will be usable
-async function jsonFetch(){
-    // declare the request URL from github site
-    const requestURL = "https://github.io/shldecke/Art101Group10Project/js/angry.json";
-    // initialize a new request object
-    const request = new Request(requestURL);
-
-    // make a network request using fetch() and returns a response obj
-    const response = await fetch(request);
-    // retreive the response as a JSON using .json
-    const songs = await response.json();
-    // return the songs array to do work on
-    return songs;
-}
------------------------------------------------------------------------------------------------------------------------------------ */
-// songs for the prototype 
-function display(arr){
-    console.log("displayed fxn");
-    var song = displayRandom(arr);
-    $("#song-output").html("Title: " + song.title + "<br>Artist: " + song.artist + "<br>Youtube Link:<br>" + song.youtube + "<br>");
-    //document.getElementById("song-output").innerHTML = "Title: " + song.title + "<br>Artist: " + song.artist + "<br>Youtube Link:<br>" + song.youtube + "<br>"; 
-}
-function getEmpoweringSongs(){
-    console.log("clicked!");
-    $.ajax({
-        url: "https://shldecke.github.io/Art101Group10Project/js/bad-bitch.json",
-        type: "GET",
-        data: [],
-    })
-    .done(function(data){
-        display(data);          // might need to indicate which element with square brackets in one of these fxns...
-    })
-}
+// -----------------------------------------------------------------------------------------------------------------------------------
 var bad_bitch_songs = [];
 var lovesick_songs = [];
 var feel_good_songs = [];
@@ -243,8 +269,8 @@ var lovesick_songs = [
      "youtube": "https://www.youtube.com/watch?v=nnQMd5ugUR8"},
     {"title": "You Are The Reason", "artist": "Calum Scott", "ft.artist": "none",
      "youtube": "https://www.youtube.com/watch?v=ShZ978fBl6Y"}
-   
 ];
+*/
 
 
 
