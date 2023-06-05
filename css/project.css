@@ -59,10 +59,25 @@ body {
     border-radius: 8px;
   }
 
-  #website-info {
-    /* insert specified styling for website info if desired */
+  /* #website-info {
+    /* insert specified styling for website info if desired
+  } */
+
+  #album-covers{
+    width: 100%;
+    overflow: hidden;
+    position:relative;
   }
-  #album-covers {
-    /* insert specified styling for the album covers if desired */
+
+  #albums {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll-overlap 10s linear infinite;
+    text-align: left;
+  }
+
+  @keyframes scroll-overlap {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-100%);}
   }
   

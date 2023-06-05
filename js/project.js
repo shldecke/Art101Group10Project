@@ -78,5 +78,25 @@ angry_button.click(function(){
     getSongs("https://shldecke.github.io/Art101Group10Project/js/angry.json");
 })
 
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------
+// javascript animation
+
+$(document).ready(function() {
+    // Optional: Adjust the duration of the scroll animation
+    var scrollDuration = 10; // seconds
+  
+    // Calculate the width of the scroll content based on its content
+    var scrollContent = $('#albums');
+    var contentWidth = scrollContent.scrollWidth;
+    scrollContent.width(contentWidth);
+  
+    // Set the animation duration on the scroll content
+    scrollContent.css({
+        'animation-duration': scrollDuration + 's', 
+        'animation-iteration-count': 'infinite',
+    });
+  });
+  
+
 
     
