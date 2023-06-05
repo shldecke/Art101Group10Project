@@ -35,7 +35,7 @@ body {
     border: solid 1px #888;
     background-color: #d7d2ec;
   }
-  /* controls for the gifset columns ---------------------------------------------------------------- */
+  /* controls for the gifset columns ------------------------------------------------------------------------------------------------- */
   .column {
     flex: 1;
   }
@@ -48,11 +48,15 @@ body {
     display: flex;
     justify-content: space-between;
   }
-  /* ------------------------------------------------------------------------------------------------ */
+  /* --------------------------------------------------------------------------------------------------------------------------------- */
   #song-output {
     display: flex;
     justify-content: center;
     /*align-items: center;*/
+  }
+
+  .button{
+    border-radius: 8px;
   }
 
   #website-info {
