@@ -26,7 +26,9 @@ function displayRandom(arr){
 function display(arr){
     console.log("displayed fxn");
     var song = displayRandom(arr);
-    $("#song-output").html("Title: " + song.title + "<br>Artist: " + song.artist + "<br>Youtube Link:<br>" + song.youtube + "<br>");
+    $("#song-output").html("Title: " + song.title + "<br/>Artist: " + song.artist + "<br/>");
+    $("#song-output").append("<br><a href='" + song.youtube + "'target='_blank' title='" + song.title + "'>Youtube Link</a>");
+    //$("#song-output").html("Title: " + song.title + "<br>Artist: " + song.artist + "<br>Youtube Link:<br>" + song.youtube + "<br>");
     //document.getElementById("song-output").innerHTML = "Title: " + song.title + "<br>Artist: " + song.artist + "<br>Youtube Link:<br>" + song.youtube + "<br>"; 
 }
 
