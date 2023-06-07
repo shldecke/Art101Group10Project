@@ -26,7 +26,7 @@ function displayRandom(arr){
 function display(arr){
     console.log("displayed fxn");
     var song = displayRandom(arr);
-    $("#song-output").html("Title: " + song.title + "<br>Artist: " + song.artist + "<br>Youtube Link:<br>" + song.youtube + "<br>");
+    $("#song-output").html("Title: " + song.title + "<br>Artist: " + song.artist + "<br>Youtube Link: <a href='" + song.youtube + "'>" + song.youtube + "</a>");
     //document.getElementById("song-output").innerHTML = "Title: " + song.title + "<br>Artist: " + song.artist + "<br>Youtube Link:<br>" + song.youtube + "<br>"; 
 }
 

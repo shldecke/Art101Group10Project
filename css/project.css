@@ -4,80 +4,93 @@
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
-    background-color: #93649a;
-  }
-  
-  /* we can have rules apply to multiple elements at the same time with commas */
-  h1,h2,h3 {
-    font-family: cursive;
-  }
-  
-  /* and we can have rules that overlap other rules, both take effect */
-  h1 {
-    text-align: center;
-    letter-spacing: 5px;
-    word-spacing: 5px;
-    font-size: 1000%;
-  }
-  
-  /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
-  #content {
-    margin: 10px;
-    padding: 10px;
-    border: solid 1px #888;
-    background-color: #da9fd2;
-  }
-  
-  /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-  .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #d7d2ec;
-  }
-  /* controls for the gifset columns ------------------------------------------------------------------------------------------------- */
-  .column {
-    flex: 1;
-  }
-  button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  #gifset {
-    display: flex;
-    justify-content: space-between;
-  }
-  /* --------------------------------------------------------------------------------------------------------------------------------- */
-  #song-output {
-    display: flex;
-    justify-content: center;
-    /*align-items: center;*/
-  }
+  background-color: #93649a;
+  /* background-image: url("../img/background.png"); */
+  background-size:cover;
+  background-position:center;
+}
 
-  .button{
-    border-radius: 8px;
-  }
+/* we can have rules apply to multiple elements at the same time with commas */
+h1,h2,h3 {
+  font-family: cursive;
+}
 
-  /* #website-info {
-    /* insert specified styling for website info if desired
-  } */
+/* and we can have rules that overlap other rules, both take effect */
+h1 {
+  text-align: center;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  font-size: 1000%;
+}
 
-  #album-covers{
-    width: 100%;
-    overflow: hidden;
-    position:relative;
-  }
+#background {
+  background-image: url("../img/background.png");
+  background-size:cover;
+  background-position:center;
+}
 
-  #albums {
-    display: flex;
-    white-space: nowrap;
-    animation: scroll-overlap 10s linear infinite;
-    text-align: left;
-  }
+/* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
+#content {
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px #888;
+  background-color: #da9fd2;
+}
 
-  @keyframes scroll-overlap {
-    0% {transform: translateX(0%);}
-    100% {transform: translateX(-100%);}
-  }
-  
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #d7d2ec;
+}
+
+/* controls for the gifset columns ------------------------------------------------------------------------------------------------- */
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#gifset {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+#song-output {
+  display:box;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.button{
+  border-radius: 8px;
+}
+
+/* #website-info {
+  /* insert specified styling for website info if desired
+} */
+
+#album-covers{
+  width: 100%;
+  overflow: hidden;
+  position:relative;
+}
+
+#albums {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll-overlap 10s linear infinite;
+  text-align: left;
+}
+
+@keyframes scroll-overlap {
+  0% {transform: translateX(0%);}
+  100% {transform: translateX(-100%);}
+}
