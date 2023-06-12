@@ -22,6 +22,9 @@ h1 {
   word-spacing: 5px;
   font-size: 1000%;
 }
+#rotation {
+  color: azure;
+}
 
 #background {
   background-image: url("../img/background.png");
@@ -76,6 +79,41 @@ button {
 /* #website-info {
   /* insert specified styling for website info if desired
 } */
+/* 
+*, *::before, *::after{
+-webkit-box-sizing:padding-box;
+box-sizing:padding-box;
+}
+
+#tickerwrapper {
+  position: relative;
+  top: 30px;
+  left: 0%;
+  border: 1px solid #444;
+  width: 99.9%;
+  height: 30px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+ul.list{
+  position: relative;
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.list.cloned {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+ul.list li {
+  float: left;
+  padding-left: 20px; 
+}*/
 
 #album-covers{
   width: 100%;
@@ -83,7 +121,7 @@ button {
   position:relative;
 }
 
-#albums {
+/*#albums {
   display: flex;
   white-space: nowrap;
   animation: scroll-overlap 10s linear infinite;
@@ -93,4 +131,4 @@ button {
 @keyframes scroll-overlap {
   0% {transform: translateX(0%);}
   100% {transform: translateX(-100%);}
-}
+} */

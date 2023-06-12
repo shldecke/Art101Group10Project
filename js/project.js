@@ -79,23 +79,59 @@ angry_button.click(function(){
 })
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------
-// javascript animation
+// javascript animation -- an attempt doesn't work tho
 
-$(document).ready(function() {
-    // Optional: Adjust the duration of the scroll animation
-    var scrollDuration = 10; // seconds
+// var ticker_Wrapper = $("#tickerwrapper");
+// var listt = ticker_Wrapper.find("ul.list");
+// var cloned_List = listt.clone();
+// var listWidth = 10;
+
+// listt.find("li").each(function (i) {
+//     listWidth += $(this, i).outerWidth(true);
+// });
+
+// var endPos = ticker_Wrapper.width() - listWidth;
+
+// listt.add(cloned_List).css({
+// "width" : listWidth + "px"
+// });
+
+// cloned_List.addClass("cloned").appendTo(ticker_Wrapper);
+
+// //TimelineMax
+// var infinite = new TimelineMax({repeat: -1, paused: true});
+// var time = 40;
+
+// infinite
+// .fromTo(listt, time, {rotation:0.01,x:0}, {force3D:true, x: -listWidth, ease: Linear.easeNone}, 0)
+// .fromTo(cloned_List, time, {rotation:0.01, x:listWidth}, {force3D:true, x:0, ease: Linear.easeNone}, 0)
+// .set(listt, {force3D:true, rotation:0.01, x: listWidth})
+// .to(cloned_List, time, {force3D:true, rotation:0.01, x: -listWidth, ease: Linear.easeNone}, time)
+// .to(listt, time, {force3D:true, rotation:0.01, x: 0, ease: Linear.easeNone}, time)
+// .progress(1).progress(0)
+// .play();
+
+// //Pause/Play		
+// ticker_Wrapper.on("mouseenter", function(){
+// infinite.pause();
+// }).on("mouseleave", function(){
+// infinite.play();
+// });
+// $(document).ready(function() {
+//     // Optional: Adjust the duration of the scroll animation
+//     var scrollDuration = 10; // seconds
   
-    // Calculate the width of the scroll content based on its content
-    var scrollContent = $('#albums');
-    var contentWidth = scrollContent.scrollWidth;
-    scrollContent.width(contentWidth);
+//     // Calculate the width of the scroll content based on its content
+//     var scrollContent = $('#albums');
+//     var contentWidth = scrollContent.scrollWidth;
+//     scrollContent.width(contentWidth);
   
-    // Set the animation duration on the scroll content
-    scrollContent.css({
-        'animation-duration': scrollDuration + 's', 
-        'animation-iteration-count': 'infinite',
-    });
-  });
+//     // Set the animation duration on the scroll content
+//     scrollContent.css({
+//         'animation-duration': scrollDuration + 's', 
+//         'animation-iteration-count': 'infinite',
+//     });
+//   });
   
 
 
