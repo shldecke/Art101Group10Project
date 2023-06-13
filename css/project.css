@@ -4,20 +4,22 @@
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
-  background-color: #93649a;
+  /* background-color: #93649a; */
   /* background-image: url("../img/background.png"); */
   background-size:cover;
   background-position:center;
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
-h1,h2,h3 {
+h1,h2,h3,p {
   font-family: cursive;
+  color:white;
 }
 
 /* and we can have rules that overlap other rules, both take effect */
 h1 {
   text-align: center;
+  color:white;
   letter-spacing: 5px;
   word-spacing: 5px;
   font-size: 1000%;
@@ -37,15 +39,15 @@ h1 {
   margin: 10px;
   padding: 10px;
   border: solid 1px #888;
-  background-color: #da9fd2;
+  /* background-color: #da9fd2; */
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
   padding: 10px;
   margin-bottom: 10px;
-  border: solid 1px #888;
-  background-color: #d7d2ec;
+  /* border: solid 1px #888;
+  background-color: #d7d2ec; */
 }
 
 /* controls for the gifset columns ------------------------------------------------------------------------------------------------- */
