@@ -123,14 +123,14 @@ ul.list li {
   position:relative;
 }
 
-/*#albums {
+#albums {
   display: flex;
   white-space: nowrap;
-  animation: scroll-overlap 10s linear infinite;
+  animation: scroll-overlap 20s linear infinite;
   text-align: left;
 }
 
 @keyframes scroll-overlap {
-  0% {transform: translateX(0%);}
+  0% {transform: translateX(100%);}
   100% {transform: translateX(-100%);}
-} */
+} 
