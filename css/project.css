@@ -20,7 +20,7 @@ h1,h2,h3{
 p{
   font-family:fantasy;
   color:white;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 /* and we can have rules that overlap other rules, both take effect */
