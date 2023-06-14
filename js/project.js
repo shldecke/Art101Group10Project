@@ -2,8 +2,7 @@
 // Author: Shelby Decker ADD NAMES HERE
 // Prototype Due: 5/30/23 7:00a
 
-// -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-// Pulling the songs from JSON
+// Pulling the songs from JSON -----------------------------------------------------------------------------------------------------------------------------------------------
 
 // returns a random song from the arr playlist
 function displayRandom(arr){
@@ -13,15 +12,14 @@ function displayRandom(arr){
     var randomSong = arr[randomIndex];
 
     // for debugging
-    
     console.log("Song Title: ", randomSong.title);
     console.log("artist: ", randomSong.artist);
     console.log("link: ", randomSong.youtube);
-    
 
     // return the random song object
     return randomSong;
 }
+
 // displays the song with the correct formatting
 function display(arr){
     console.log("displayed fxn");
